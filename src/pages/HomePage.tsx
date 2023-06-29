@@ -14,6 +14,8 @@ const HomePage = () => {
 
   if (isLoading) {
     return <p className="text-white text-2xl">Loading...</p>;
+  } else if (isError) {
+    return <p className="text-red-500 text-2xl">Something went wrong...</p>;
   }
 
   return (
